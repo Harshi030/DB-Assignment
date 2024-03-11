@@ -1,0 +1,5 @@
+1st. 
+Based on the provided diagram, the "product" and "product_category" entities have relationship defined by the "category_id" column in the "product" table.This "category_id" column is an integer and serves as a foreign key, referencing the "id" column in the "product_id" table.This shows that each product is associated with one product category,while each product category can have multiple products associated with it.It means,it has one to many relationship between "product" and "product_category" entities.
+
+2nd.
+To validate the each product that entered into the product table by using foreign key constraint,by definig a foreign key constraint on the category_id ,inventory_id and discount_id in product table which referening to id in product_category ,product_inventory and discount entities and implenting validation logic in your application code to ensure that a valid category is selected when creating or updating a product.this approach can complement the foreign key constraint.
